@@ -28,149 +28,296 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_ProgramExplain = new System.Windows.Forms.Button();
-            this.categoryPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_FormSetting = new System.Windows.Forms.Button();
-            this.btn_statisticsForm = new System.Windows.Forms.Button();
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.categoryPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            btn_ProgramExplain = new Button();
+            categoryPanel = new Panel();
+            pn_cursor = new Panel();
+            btn_end = new Button();
+            btn_FormSetting = new Button();
+            btn_statisticsForm = new Button();
+            btn_producer = new Button();
+            mainPanel = new Panel();
+            pictureBox1 = new PictureBox();
+            pn_processingMessage = new Panel();
+            label2 = new Label();
+            pn_warningMessage = new Panel();
+            pictureBox_warning = new PictureBox();
+            lb_warning = new Label();
+            btn_exit = new Button();
+            label1 = new Label();
+            panel1 = new Panel();
+            categoryPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pn_processingMessage.SuspendLayout();
+            pn_warningMessage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_warning).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // btn_ProgramExplain
             // 
-            this.btn_ProgramExplain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btn_ProgramExplain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ProgramExplain.FlatAppearance.BorderSize = 0;
-            this.btn_ProgramExplain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ProgramExplain.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_ProgramExplain.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btn_ProgramExplain.Location = new System.Drawing.Point(0, 7);
-            this.btn_ProgramExplain.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ProgramExplain.Name = "btn_ProgramExplain";
-            this.btn_ProgramExplain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_ProgramExplain.Size = new System.Drawing.Size(188, 67);
-            this.btn_ProgramExplain.TabIndex = 3;
-            this.btn_ProgramExplain.Text = "프로그램 설명";
-            this.btn_ProgramExplain.UseVisualStyleBackColor = false;
+            btn_ProgramExplain.BackColor = Color.FromArgb(32, 33, 36);
+            btn_ProgramExplain.BackgroundImageLayout = ImageLayout.None;
+            btn_ProgramExplain.FlatAppearance.BorderSize = 0;
+            btn_ProgramExplain.FlatStyle = FlatStyle.Flat;
+            btn_ProgramExplain.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_ProgramExplain.ForeColor = Color.White;
+            btn_ProgramExplain.Image = Properties.Resources.free_icon_window_display_5581930_1_;
+            btn_ProgramExplain.ImageAlign = ContentAlignment.MiddleRight;
+            btn_ProgramExplain.Location = new Point(26, 215);
+            btn_ProgramExplain.Name = "btn_ProgramExplain";
+            btn_ProgramExplain.RightToLeft = RightToLeft.Yes;
+            btn_ProgramExplain.Size = new Size(210, 65);
+            btn_ProgramExplain.TabIndex = 3;
+            btn_ProgramExplain.Text = "설명";
+            btn_ProgramExplain.UseVisualStyleBackColor = false;
+            btn_ProgramExplain.Click += btn_ProgramExplain_Click_1;
+            btn_ProgramExplain.MouseEnter += btn_ProgramExplain_MouseEnter;
+            btn_ProgramExplain.MouseLeave += btn_ProgramExplain_MouseLeave;
             // 
             // categoryPanel
             // 
-            this.categoryPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
-            this.categoryPanel.Controls.Add(this.button1);
-            this.categoryPanel.Controls.Add(this.btn_ProgramExplain);
-            this.categoryPanel.Controls.Add(this.btn_FormSetting);
-            this.categoryPanel.Controls.Add(this.btn_statisticsForm);
-            this.categoryPanel.Location = new System.Drawing.Point(0, 49);
-            this.categoryPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.categoryPanel.Name = "categoryPanel";
-            this.categoryPanel.Size = new System.Drawing.Size(188, 643);
-            this.categoryPanel.TabIndex = 3;
+            categoryPanel.BackColor = Color.FromArgb(32, 33, 36);
+            categoryPanel.Controls.Add(pn_cursor);
+            categoryPanel.Controls.Add(btn_end);
+            categoryPanel.Controls.Add(btn_ProgramExplain);
+            categoryPanel.Controls.Add(btn_FormSetting);
+            categoryPanel.Controls.Add(btn_statisticsForm);
+            categoryPanel.Controls.Add(btn_producer);
+            categoryPanel.Location = new Point(0, 37);
+            categoryPanel.Name = "categoryPanel";
+            categoryPanel.Size = new Size(189, 522);
+            categoryPanel.TabIndex = 3;
             // 
-            // button1
+            // pn_cursor
             // 
-            this.button1.Location = new System.Drawing.Point(0, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 29);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "팝업버튼";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            pn_cursor.BackColor = Color.White;
+            pn_cursor.Location = new Point(178, 160);
+            pn_cursor.Name = "pn_cursor";
+            pn_cursor.Size = new Size(4, 10);
+            pn_cursor.TabIndex = 6;
+            // 
+            // btn_end
+            // 
+            btn_end.BackColor = Color.FromArgb(32, 33, 36);
+            btn_end.BackgroundImageLayout = ImageLayout.None;
+            btn_end.FlatAppearance.BorderSize = 0;
+            btn_end.FlatStyle = FlatStyle.Flat;
+            btn_end.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_end.ForeColor = Color.White;
+            btn_end.Image = Properties.Resources.KakaoTalk_20230821_112406611;
+            btn_end.ImageAlign = ContentAlignment.MiddleRight;
+            btn_end.Location = new Point(25, 416);
+            btn_end.Name = "btn_end";
+            btn_end.RightToLeft = RightToLeft.Yes;
+            btn_end.Size = new Size(210, 65);
+            btn_end.TabIndex = 7;
+            btn_end.Text = "종료";
+            btn_end.UseVisualStyleBackColor = false;
+            btn_end.Click += btn_end_Click;
+            btn_end.MouseEnter += btn_end_MouseEnter;
+            btn_end.MouseLeave += btn_end_MouseLeave;
             // 
             // btn_FormSetting
             // 
-            this.btn_FormSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btn_FormSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_FormSetting.FlatAppearance.BorderSize = 0;
-            this.btn_FormSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_FormSetting.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_FormSetting.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btn_FormSetting.Location = new System.Drawing.Point(0, 153);
-            this.btn_FormSetting.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_FormSetting.Name = "btn_FormSetting";
-            this.btn_FormSetting.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_FormSetting.Size = new System.Drawing.Size(188, 67);
-            this.btn_FormSetting.TabIndex = 2;
-            this.btn_FormSetting.Text = "설정";
-            this.btn_FormSetting.UseVisualStyleBackColor = false;
-            this.btn_FormSetting.Click += new System.EventHandler(this.btn_FormSetting_Click);
+            btn_FormSetting.BackColor = Color.FromArgb(32, 33, 36);
+            btn_FormSetting.BackgroundImageLayout = ImageLayout.None;
+            btn_FormSetting.FlatAppearance.BorderSize = 0;
+            btn_FormSetting.FlatStyle = FlatStyle.Flat;
+            btn_FormSetting.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_FormSetting.ForeColor = Color.White;
+            btn_FormSetting.Image = Properties.Resources.KakaoTalk_20230821_104715043;
+            btn_FormSetting.ImageAlign = ContentAlignment.MiddleRight;
+            btn_FormSetting.Location = new Point(25, 135);
+            btn_FormSetting.Name = "btn_FormSetting";
+            btn_FormSetting.RightToLeft = RightToLeft.Yes;
+            btn_FormSetting.Size = new Size(210, 65);
+            btn_FormSetting.TabIndex = 2;
+            btn_FormSetting.Text = "설정";
+            btn_FormSetting.UseVisualStyleBackColor = false;
+            btn_FormSetting.Click += btn_FormSetting_Click;
+            btn_FormSetting.MouseEnter += btn_FormSetting_MouseEnter;
+            btn_FormSetting.MouseLeave += btn_FormSetting_MouseLeave;
             // 
             // btn_statisticsForm
             // 
-            this.btn_statisticsForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btn_statisticsForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_statisticsForm.FlatAppearance.BorderSize = 0;
-            this.btn_statisticsForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_statisticsForm.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_statisticsForm.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btn_statisticsForm.Location = new System.Drawing.Point(0, 80);
-            this.btn_statisticsForm.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_statisticsForm.Name = "btn_statisticsForm";
-            this.btn_statisticsForm.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btn_statisticsForm.Size = new System.Drawing.Size(188, 67);
-            this.btn_statisticsForm.TabIndex = 1;
-            this.btn_statisticsForm.Text = "통계";
-            this.btn_statisticsForm.UseVisualStyleBackColor = false;
-            this.btn_statisticsForm.Click += new System.EventHandler(this.btn_statisticsForm_Click);
+            btn_statisticsForm.BackColor = Color.FromArgb(32, 33, 36);
+            btn_statisticsForm.BackgroundImageLayout = ImageLayout.None;
+            btn_statisticsForm.FlatAppearance.BorderSize = 0;
+            btn_statisticsForm.FlatStyle = FlatStyle.Flat;
+            btn_statisticsForm.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_statisticsForm.ForeColor = Color.White;
+            btn_statisticsForm.Image = Properties.Resources.KakaoTalk_20230821_111614469;
+            btn_statisticsForm.ImageAlign = ContentAlignment.MiddleRight;
+            btn_statisticsForm.Location = new Point(26, 55);
+            btn_statisticsForm.Name = "btn_statisticsForm";
+            btn_statisticsForm.RightToLeft = RightToLeft.Yes;
+            btn_statisticsForm.Size = new Size(210, 65);
+            btn_statisticsForm.TabIndex = 1;
+            btn_statisticsForm.Text = "분석";
+            btn_statisticsForm.UseVisualStyleBackColor = false;
+            btn_statisticsForm.Click += btn_statisticsForm_Click;
+            btn_statisticsForm.MouseEnter += btn_statisticsForm_MouseEnter;
+            btn_statisticsForm.MouseLeave += btn_statisticsForm_MouseLeave;
+            // 
+            // btn_producer
+            // 
+            btn_producer.BackColor = Color.FromArgb(32, 33, 36);
+            btn_producer.BackgroundImageLayout = ImageLayout.None;
+            btn_producer.FlatAppearance.BorderSize = 0;
+            btn_producer.FlatStyle = FlatStyle.Flat;
+            btn_producer.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_producer.ForeColor = Color.White;
+            btn_producer.Image = Properties.Resources.KakaoTalk_20230821_104347268;
+            btn_producer.ImageAlign = ContentAlignment.MiddleRight;
+            btn_producer.Location = new Point(25, 292);
+            btn_producer.Name = "btn_producer";
+            btn_producer.RightToLeft = RightToLeft.Yes;
+            btn_producer.Size = new Size(210, 65);
+            btn_producer.TabIndex = 8;
+            btn_producer.Text = "제작자";
+            btn_producer.UseVisualStyleBackColor = false;
+            btn_producer.Click += btn_producer_Click;
+            btn_producer.MouseEnter += btn_producer_MouseEnter;
+            btn_producer.MouseLeave += btn_producer_MouseLeave;
             // 
             // mainPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.mainPanel.Location = new System.Drawing.Point(188, 49);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1031, 643);
-            this.mainPanel.TabIndex = 4;
+            mainPanel.BackColor = Color.FromArgb(49, 51, 56);
+            mainPanel.Location = new Point(208, 40);
+            mainPanel.Name = "mainPanel";
+            mainPanel.Size = new Size(805, 464);
+            mainPanel.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.KakaoTalk_20230822_155142195;
+            pictureBox1.Location = new Point(246, 8);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(32, 31);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // pn_processingMessage
+            // 
+            pn_processingMessage.BackColor = Color.FromArgb(49, 51, 56);
+            pn_processingMessage.Controls.Add(pictureBox1);
+            pn_processingMessage.Controls.Add(label2);
+            pn_processingMessage.Location = new Point(208, 510);
+            pn_processingMessage.Name = "pn_processingMessage";
+            pn_processingMessage.Size = new Size(807, 49);
+            pn_processingMessage.TabIndex = 0;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("함초롬돋움", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(285, 14);
+            label2.Name = "label2";
+            label2.Size = new Size(278, 19);
+            label2.TabIndex = 2;
+            label2.Text = "백그라운드에서 자세분석 실행중입니다.";
+            // 
+            // pn_warningMessage
+            // 
+            pn_warningMessage.BackColor = Color.FromArgb(49, 51, 56);
+            pn_warningMessage.Controls.Add(pictureBox_warning);
+            pn_warningMessage.Controls.Add(lb_warning);
+            pn_warningMessage.Location = new Point(208, 507);
+            pn_warningMessage.Name = "pn_warningMessage";
+            pn_warningMessage.Size = new Size(807, 49);
+            pn_warningMessage.TabIndex = 4;
+            // 
+            // pictureBox_warning
+            // 
+            pictureBox_warning.Image = Properties.Resources.KakaoTalk_20230824_093608718;
+            pictureBox_warning.Location = new Point(246, 9);
+            pictureBox_warning.Name = "pictureBox_warning";
+            pictureBox_warning.Size = new Size(32, 31);
+            pictureBox_warning.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_warning.TabIndex = 3;
+            pictureBox_warning.TabStop = false;
+            // 
+            // lb_warning
+            // 
+            lb_warning.AutoSize = true;
+            lb_warning.Font = new Font("함초롬돋움", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_warning.ForeColor = Color.White;
+            lb_warning.Location = new Point(285, 14);
+            lb_warning.Name = "lb_warning";
+            lb_warning.Size = new Size(179, 19);
+            lb_warning.TabIndex = 2;
+            lb_warning.Text = "바른자세를 입력해주세요";
+            // 
+            // btn_exit
+            // 
+            btn_exit.BackColor = Color.FromArgb(32, 33, 36);
+            btn_exit.BackgroundImageLayout = ImageLayout.None;
+            btn_exit.FlatAppearance.BorderSize = 0;
+            btn_exit.FlatStyle = FlatStyle.Flat;
+            btn_exit.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_exit.ForeColor = SystemColors.ButtonShadow;
+            btn_exit.Location = new Point(974, 3);
+            btn_exit.Name = "btn_exit";
+            btn_exit.RightToLeft = RightToLeft.Yes;
+            btn_exit.Size = new Size(34, 28);
+            btn_exit.TabIndex = 4;
+            btn_exit.Text = "X";
+            btn_exit.UseVisualStyleBackColor = false;
+            btn_exit.Click += btn_exit_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("맑은 고딕", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Silver;
+            label1.Location = new Point(10, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(46, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Vadit";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1219, 53);
-            this.panel1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.Location = new System.Drawing.Point(1167, 8);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(44, 37);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "X";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            panel1.BackColor = Color.FromArgb(32, 33, 36);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btn_exit);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1015, 40);
+            panel1.TabIndex = 0;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1219, 692);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.categoryPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
-            this.categoryPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(38, 38, 40);
+            ClientSize = new Size(1015, 560);
+            Controls.Add(pn_warningMessage);
+            Controls.Add(pn_processingMessage);
+            Controls.Add(panel1);
+            Controls.Add(mainPanel);
+            Controls.Add(categoryPanel);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            FormClosing += FormMain_FormClosing;
+            Load += FormMain_Load;
+            categoryPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pn_processingMessage.ResumeLayout(false);
+            pn_processingMessage.PerformLayout();
+            pn_warningMessage.ResumeLayout(false);
+            pn_warningMessage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_warning).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -180,8 +327,18 @@
         private Button btn_FormSetting;
         private Button btn_statisticsForm;
         private Panel mainPanel;
+        private Button btn_end;
+        private Button btn_producer;
+        private RadioButton radioButton1;
+        private Panel pn_cursor;
+        private Panel pn_processingMessage;
+        private Button btn_exit;
+        private Label label1;
         private Panel panel1;
-        private Button button2;
-        private Button button1;
+        private Label label2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox_warning;
+        private Label lb_warning;
+        private Panel pn_warningMessage;
     }
 }
